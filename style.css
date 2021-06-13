@@ -1,0 +1,128 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+
+#top {
+    transform: translate(-45px, -325px) rotate(30deg);
+}
+
+#bottom {
+    transform: translate(15px, 274px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    height: 50%;
+    width: 40%;
+    min-height: 400px;
+    max-height: 456.5px;
+    min-width: 400px;
+    max-width: 350px;
+    background: white;
+    z-index: 1;
+}
+
+#bg-card {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    height: 35%;
+}
+
+#profileImg {
+    border-radius: 50%;
+    height: 10em;
+    border: 5px solid white;
+    transform: translateY(-60px);
+    align-self: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateY(-30px);
+}
+
+.info #name_age {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.info #name_age span {
+    font-weight: bold;
+    opacity: 40%;
+}
+
+.info #place {
+    opacity: 50%;
+}
+
+.stats {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    justify-content: space-around;
+    align-self: flex-end;
+    padding: 10px;
+    border-top: 0.1px solid lightgray;
+}
+
+.stat-item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(227, 10%, 46%);
+}
+
+.stat-item .num {
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+    padding: 10px;
+    height: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
